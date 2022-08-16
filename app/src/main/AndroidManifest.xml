@@ -4,21 +4,14 @@
     package="nexle.tutorial.happyplaces">
 
     <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HappyPlaces"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
-        <activity
-            android:name=".AddhappyPlaceActivity"
-            android:screenOrientation="portrait"
-            android:label="ADD HAPPY PLACE"
-            android:theme="@style/AppTheme"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -28,6 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AddHappyPlaceActivity"
+            android:screenOrientation="portrait"
+            android:label="ADD HAPPY PLACE"
+            android:theme="@style/CustomNoActionBarTheme"
+            />
     </application>
 
 </manifest>
